@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-brand-green-light: #ecfdf5;
+  --color-brand-green: #10b981;
+  --color-brand-green-dark: #065f46;
+  --color-brand-gold-light: #fef9c3;
+  --color-brand-gold: #fbbf24;
+  --color-brand-gold-dark: #b45309;
+  --color-brand-blue: #0ea5e9;
+  --color-brand-blue-dark: #0369a1;
+  --color-dark-bg: #0b0f19;
+  --color-dark-card: #151c2c;
+  --color-dark-border: #1e293b;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar styling for a premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Subtle glow animations for blockchain visualizer */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(14, 165, 233, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.6);
+  }
+}
+
+.blockchain-node-pulse {
+  animation: pulseGlow 3s infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.blockchain-flow-line {
+  stroke-dasharray: 5;
+  animation: dash 1s linear infinite;
+}
