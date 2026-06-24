@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RiceChain - Digital Supply Chain Berbasis Blockchain</title>
+  <!-- Link stylesheet eksternal -->
+  <link rel="stylesheet" crossorigin href="/apk_web_ricechain/assets/index-B8jZqw7q.css">
+</head>
+<body>
+
+  <!-- Overlay untuk layout mobile sidebar -->
+  <div class="overlay" onclick="document.querySelectorAll('.sidebar').forEach(s => s.classList.remove('open')); this.classList.remove('active');"></div>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- 1. LANDING PAGE SECTION -->
+  <!-- ---------------------------------------------------- -->
+  <section id="landing-page" class="page-section active">
+    <!-- Navbar Landing Page -->
+    <nav class="landing-nav">
+      <div class="logo-container">
+        <span class="logo-icon">🌾</span>
+        <span class="logo-text">RiceChain</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#landing-page" onclick="showPage('landing-page')">Beranda</a></li>
+        <li><a href="#fitur-section">Fitur</a></li>
+        <li><a href="#alur-supply-chain">Alur Supply Chain</a></li>
+        <li><a href="#login-page" class="btn btn-primary" style="color:white; padding: 8px 16px;" onclick="showPage('login-page')">Login Sistem</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="hero-content">
+        <h1>RiceChain</h1>
+        <p class="hero-subtitle">Digital Supply Chain Berbasis Blockchain untuk Distribusi Beras</p>
+        <p class="hero-desc">
+          RiceChain menghadirkan platform traceability dan transparansi rantai pasok beras dari hulu ke hilir. Dengan teknologi blockchain ledger, setiap aktivitas panen, penggilingan, logistik stok, hingga konfirmasi penerimaan diaudit secara transparan, aman, dan bebas dari risiko manipulasi data.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="showPage('login-page')">Masuk ke Sistem</button>
+          <a href="#alur-supply-chain" class="btn btn-outline">Lihat Traceability</a>
+        </div>
+      </div>
+      
+      <!-- Visual Efek Blockchain Nodes -->
+      <div class="hero-visual">
+        <div class="hero-animation">
+          <div class="hero-blockchain-nodes">
+            <div class="hero-node node-1">🌾</div>
+            <div class="hero-node node-2">⚙️</div>
+            <div class="hero-node node-3">📦</div>
+            <div class="hero-node node-4">🚚</div>
+          </div>
+          <div class="hero-core-node">
+            <span>CHAIN</span>
+            <strong>LEDGER</strong>
+            <span style="font-size: 1.2rem; margin-top: 5px;">🔒</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Masalah Rantai Pasok Beras Konvensional -->
+    <section class="section-container" style="background-color: white;">
+      <h2 class="section-title">Masalah Rantai Pasok Tradisional</h2>
+      <p class="section-subtitle">Tantangan yang dihadapi oleh para pelaku industri dan konsumen beras saat ini</p>
+      
+      <div class="problems-grid">
+        <div class="problem-card">
+          <div class="problem-icon">🔍</div>
+          <h3>Sulit Melacak Asal-Usul</h3>
+          <p>Konsumen kesulitan memverifikasi dari mana padi dipanen, apakah bibit berkualitas, atau menggunakan bahan kimia berbahaya.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📊</div>
+          <h3>Perbedaan Data Stok</h3>
+          <p>Ketidakcocokan laporan persediaan fisik di gudang dengan catatan distributor menyebabkan miskomunikasi pasokan.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">⏳</div>
+          <h3>Keterlambatan Pengiriman</h3>
+          <p>Minimnya visibilitas real-time tracking distribusi truk logistik beras dari gudang ke pasar pembeli.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🛡️</div>
+          <h3>Risiko Manipulasi Transaksi</h3>
+          <p>Potensi pemalsuan nota pembelian atau tagihan pembayaran manual yang merugikan petani kecil maupun pembeli retail.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📉</div>
+          <h3>Kurang Info Kualitas</h3>
+          <p>Standardisasi mutu beras (kadar air, kebersihan) sering kali berubah-ubah tanpa adanya audit record yang pasti.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solusi RiceChain -->
+    <section id="fitur-section" class="section-container">
+      <h2 class="section-title">Solusi Teknologi RiceChain</h2>
+      <p class="section-subtitle">Fitur cerdas untuk transparansi, traceability, dan keamanan bisnis distribusi beras</p>
+
+      <div class="solutions-grid">
+        <div class="solution-card">
+          <div class="solution-icon">⛓️</div>
+          <h3>Blockchain Ledger</h3>
+          <p>Setiap transaksi panen, giling, stok, dan pembayaran dicatat ke block digital permanen dengan hash kriptografi dummy yang tidak dapat diubah.</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">📱</div>
+          <h3>QR Traceability</h3>
+          <p>Konsumen cukup memindai kode QR untuk melihat rekam jejak hulu-ke-hilir: dari petani penggarap, tanggal giling, hingga kurir pengirim.</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">💳</div>
+          <h3>Escrow Payment</h3>
+          <p>Dana pembelian dikunci sementara dalam sistem escrow digital dan baru akan dicairkan ke penjual setelah pembeli mengonfirmasi barang diterima.</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🚨</div>
+          <h3>Low Stock Alert</h3>
+          <p>Sistem otomatis memberi notifikasi jika jumlah persediaan beras di gudang distributor mendekati atau di bawah safety stock limit.</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">💻</div>
+          <h3>Dashboard Monitoring</h3>
+          <p>Tampilan analitik terpusat yang dirancang khusus untuk masing-masing peran pengguna guna memantau efisiensi logistik secara real-time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alur Supply Chain Beras -->
+    <section id="alur-supply-chain" class="section-container" style="background-color: white;">
+      <h2 class="section-title">Alur Supply Chain Digital</h2>
+      <p class="section-subtitle">Proses integrasi distribusi beras dari lahan pertanian hingga ke tangan pembeli</p>
+      
+      <div class="flow-diagram">
+        <div class="flow-step">
+          <div class="flow-step-num">1</div>
+          <div class="flow-icon">🧑‍🌾</div>
+          <h4>Petani Input Panen</h4>
+          <p>Petani mencatat hasil panen gabah, tanggal, mutu, dan lokasi sawah.</p>
+        </div>
+        <div class="flow-arrow">➡️</div>
+        <div class="flow-step">
+          <div class="flow-step-num">2</div>
+          <div class="flow-icon">⚙️</div>
+          <h4>Penggilingan Proses</h4>
+          <p>Gabah diproses menjadi beras giling dengan mencantumkan ID Panen.</p>
+        </div>
+        <div class="flow-arrow">➡️</div>
+        <div class="flow-step">
+          <div class="flow-step-num">3</div>
+          <div class="flow-icon">📦</div>
+          <h4>Gudang Kontrol Stok</h4>
+          <p>Distributor mencatat produk beras masuk ke gudang penyimpanan.</p>
+        </div>
+        <div class="flow-arrow">➡️</div>
+        <div class="flow-step">
+          <div class="flow-step-num">4</div>
+          <div class="flow-icon">🚚</div>
+          <h4>Distributor Kirim</h4>
+          <p>Beras dikirim ke pembeli dengan integrasi data resi pengiriman.</p>
+        </div>
+        <div class="flow-arrow">➡️</div>
+        <div class="flow-step">
+          <div class="flow-step-num">5</div>
+          <div class="flow-icon">🛒</div>
+          <h4>Konsumen Terima</h4>
+          <p>Pembeli menerima produk, memindai QR, dan mencairkan dana escrow.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alur Audit Blockchain Ledger -->
+    <section class="section-container">
+      <h2 class="section-title">Rantai Block Blockchain Audit</h2>
+      <p class="section-subtitle">Visualisasi block audit ledger transaksi terbaru yang terekam di RiceChain</p>
+      
+      <div id="landing-blockchain-blocks" class="blockchain-blocks">
+        <!-- Diisi otomatis oleh JavaScript -->
+      </div>
+    </section>
+
+    <!-- Footer Landing -->
+    <footer>
+      <div class="footer-logo">
+        <span style="font-size: 1.8rem;">🌾</span>
+        <span>RiceChain</span>
+      </div>
+      <p class="footer-desc">
+        Aplikasi Prototype Digital Supply Chain Beras Berbasis Blockchain. Dibuat untuk memenuhi Tugas UTS Mata Kuliah Analisis dan Perancangan Teknologi Informasi.
+      </p>
+      <div class="footer-copy">
+        &copy; 2026 RiceChain - Tim UTS APTI. Hak Cipta Dilindungi.
+      </div>
+    </footer>
+  </section>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- 2. LOGIN / REGISTER PAGE SECTION -->
+  <!-- ---------------------------------------------------- -->
+  <section id="login-page" class="page-section">
+    <div class="login-container-page">
+      <div class="login-card">
+        <div class="login-logo">
+          <span style="font-size: 3rem;">🌾</span>
+          <h2>RiceChain</h2>
+        </div>
+        <p class="login-subtitle">Silakan masuk menggunakan akun dummy Anda</p>
+        
+        <form id="login-form-el">
+          <div class="form-group">
+            <label for="login-email">Alamat Email</label>
+            <input type="email" id="login-email" class="form-control" placeholder="petani@ricechain.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="login-password">Kata Sandi</label>
+            <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+          </div>
+
+          <div class="form-group">
+            <label>Pilih Peran Akun (Role)</label>
+            <div class="login-roles">
+              <div class="role-option">
+                <input type="radio" name="login-role" id="role-petani" value="Petani" checked>
+                <label for="role-petani" class="role-label">
+                  <span class="role-icon-label">🧑‍🌾</span>
+                  <span>Petani</span>
+                </label>
+              </div>
+
+              <div class="role-option">
+                <input type="radio" name="login-role" id="role-distributor" value="Penggilingan/Distributor">
+                <label for="role-distributor" class="role-label">
+                  <span class="role-icon-label">🏭</span>
+                  <span>Distributor</span>
+                </label>
+              </div>
+
+              <div class="role-option">
+                <input type="radio" name="login-role" id="role-pembeli" value="Pembeli">
+                <label for="role-pembeli" class="role-label">
+                  <span class="role-icon-label">🛒</span>
+                  <span>Pembeli</span>
+                </label>
+              </div>
+
+              <div class="role-option">
+                <input type="radio" name="login-role" id="role-admin" value="Admin">
+                <label for="role-admin" class="role-label">
+                  <span class="role-icon-label">🛡️</span>
+                  <span>Admin</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary login-btn">Masuk ke Dashboard</button>
+        </form>
+
+        <div class="login-hint">
+          <p>💡 <strong>Info Akun Uji Coba:</strong></p>
+          <p style="font-size: 0.8rem; margin-top: 5px;">
+            Email Petani: <code>petani@ricechain.com</code> | Pass: <code>password</code><br>
+            Email Dist/Giling: <code>distributor@ricechain.com</code> | Pass: <code>password</code><br>
+            Email Pembeli: <code>pembeli@ricechain.com</code> | Pass: <code>password</code><br>
+            Email Admin: <code>admin@ricechain.com</code> | Pass: <code>password</code>
+          </p>
+          <p style="margin-top: 15px;"><a href="#" onclick="showPage('landing-page')" style="color: var(--primary-green); font-weight: 600;">← Kembali ke Beranda</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- 3. DASHBOARD PETANI SECTION -->
+  <!-- ---------------------------------------------------- -->
+  <section id="petani-dashboard" class="page-section">
+    <div class="dashboard-wrapper">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <span style="font-size: 1.5rem;">🌾</span>
+          <span class="logo-text">RiceChain</span>
+        </div>
+        <div class="sidebar-user">
+          <div class="user-avatar">🌾</div>
+          <div class="user-info">
+            <span class="user-name profile-user-name">Nama Petani</span>
+            <span class="user-role profile-user-role">Petani</span>
+          </div>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="menu-item active" data-tab="home"><a href="#" onclick="showDashboardTab('petani', 'home')">🏠 Dashboard</a></li>
+          <li class="menu-item" data-tab="panen"><a href="#" onclick="showDashboardTab('petani', 'panen')">🌾 Input Panen</a></li>
+          <li class="menu-item" data-tab="produk"><a href="#" onclick="showDashboardTab('petani', 'produk')">📦 Produk Beras</a></li>
+          <li class="menu-item" data-tab="transaksi"><a href="#" onclick="showDashboardTab('petani', 'transaksi')">💼 Riwayat Transaksi</a></li>
+          <li class="menu-item" data-tab="blockchain"><a href="#" onclick="showDashboardTab('petani', 'blockchain')">⛓️ Riwayat Blockchain</a></li>
+          <li class="menu-item logout-item"><a href="#" onclick="logoutUser()">🚪 Logout</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <button class="sidebar-toggle-btn" onclick="toggleMobileSidebar('petani')">☰</button>
+          <div class="header-title">
+            <h2>Dashboard Mitra Petani</h2>
+          </div>
+          <div class="header-actions-bar">
+            <div class="wallet-badge">
+              <span>💳 Dompet:</span>
+              <strong class="wallet-balance-value">Rp 0</strong>
+            </div>
+          </div>
+        </header>
+
+        <div class="dashboard-content">
+          <!-- Sub-Tab 1: Home Dashboard -->
+          <div id="petani-home" class="tab-content active">
+            <!-- Card Ringkasan -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-info">
+                  <span class="stat-label">Total Panen Gabah</span>
+                  <span class="stat-value" id="petani-stat-total-panen">0 Kg</span>
+                </div>
+                <div class="stat-icon">🌾</div>
+              </div>
+              <div class="stat-card blue">
+                <div class="stat-info">
+                  <span class="stat-label">Produk Terdaftar</span>
+                  <span class="stat-value" id="petani-stat-produk-aktif">0</span>
+                </div>
+                <div class="stat-icon">📦</div>
+              </div>
+              <div class="stat-card gold">
+                <div class="stat-info">
+                  <span class="stat-label">Total Penjualan</span>
+                  <span class="stat-value">Rp 12.000.000</span>
+                </div>
+                <div class="stat-icon">💰</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-info">
+                  <span class="stat-label">Transaksi Selesai</span>
+                  <span class="stat-value" id="petani-stat-transaksi-selesai">0</span>
+                </div>
+                <div class="stat-icon">✓</div>
+              </div>
+            </div>
+
+            <!-- Dashboard Grid: Ringkasan Tabel -->
+            <div class="content-card">
+              <h3>🌾 Riwayat Panen Terbaru</h3>
+              <div class="table-responsive">
+                <table class="modern-table">
+                  <thead>
+                    <tr>
+                      <th>ID Panen</th>
+                      <th>Tanggal Panen</th>
+                      <th>Jenis Gabah</th>
+                      <th>Jumlah Gabah</th>
+                      <th>Mutu/Kualitas</th>
+                      <th>Lokasi Lahan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="petani-panen-table-body">
+                    <!-- JavaScript render -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 2: Input Panen -->
+          <div id="petani-panen" class="tab-content">
+            <div class="dashboard-grid-2">
+              <!-- Form input -->
+              <div class="content-card">
+                <h3>📝 Catat Hasil Panen</h3>
+                <form id="form-tambah-panen" onsubmit="event.preventDefault(); tambahPanen();">
+                  <div class="form-group">
+                    <label for="panen-tanggal">Tanggal Panen</label>
+                    <input type="date" id="panen-tanggal" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="panen-jenis">Jenis Gabah/Padi</label>
+                    <select id="panen-jenis" class="form-control">
+                      <option value="IR64">IR64</option>
+                      <option value="Pandan Wangi">Pandan Wangi</option>
+                      <option value="Mentik Susu">Mentik Susu</option>
+                      <option value="Cianjur">Beras Cianjur</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="panen-jumlah">Jumlah Gabah (Kg)</label>
+                    <input type="number" id="panen-jumlah" class="form-control" placeholder="Contoh: 1500" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="panen-kualitas">Hasil Kualitas</label>
+                    <select id="panen-kualitas" class="form-control">
+                      <option value="A (Sangat Baik)">Grade A (Sangat Baik)</option>
+                      <option value="B (Baik)">Grade B (Cukup Baik)</option>
+                      <option value="C (Standar)">Grade C (Standar)</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="panen-lokasi">Lokasi Sawah</label>
+                    <input type="text" id="panen-lokasi" class="form-control" placeholder="Contoh: Sawah Karawang Blok C3" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Simpan & Registrasi Kriptografi</button>
+                </form>
+              </div>
+
+              <!-- Petunjuk / Alur Ledger Kriptografi -->
+              <div class="content-card">
+                <h3>🔒 Integrasi Blockchain Ledger</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+                  Setiap data panen yang Anda kirimkan melalui formulir ini akan <strong>otomatis dibuatkan blok transaksi baru</strong> pada database blockchain ledger RiceChain.
+                </p>
+                <div style="background-color: var(--bg-light); border: 1.5px dashed var(--border-color); border-radius: var(--border-radius-sm); padding: 15px; margin: 15px 0;">
+                  <h4 style="font-size: 0.95rem; margin-bottom: 8px; color: var(--primary-green-hover);">Bagaimana Proses Bekerja?</h4>
+                  <ol style="margin-left: 20px; font-size: 0.85rem; display: flex; flex-direction: column; gap: 8px;">
+                    <li>Data divalidasi oleh sistem berdasarkan input sensor sawah/petani.</li>
+                    <li>Sistem mengenkripsi data panen dan menghitung <code>Hash Hexadecimal</code> unik.</li>
+                    <li>Blok data tersebut dikaitkan dengan hash dari blok sebelumnya (<code>Previous Hash</code>) untuk keamanan anti-tampering.</li>
+                    <li>Status data dipersist dan siap digunakan oleh Penggilingan beras untuk diproses lebih lanjut.</li>
+                  </ol>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-dark); font-weight: 600;">
+                  Data yang telah disimpan TIDAK DAPAT diubah secara sepihak untuk menjamin kejujuran kualitas beras kepada pembeli!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 3: Produk Beras -->
+          <div id="petani-produk" class="tab-content">
+            <div class="content-card">
+              <h3>📦 Daftar Produk Beras dalam Gudang</h3>
+              <div class="table-responsive">
+                <table class="modern-table">
+                  <thead>
+                    <tr>
+                      <th>ID Beras</th>
+                      <th>Nama Jenis Beras</th>
+                      <th>Harga per Kg</th>
+                      <th>Stok Tersedia</th>
+                      <th>Batas Safety Stock</th>
+                      <th>Status Kontrol</th>
+                    </tr>
+                  </thead>
+                  <tbody id="petani-produk-table-body">
+                    <!-- JS render -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 4: Riwayat Transaksi -->
+          <div id="petani-transaksi" class="tab-content">
+            <div class="content-card">
+              <h3>💼 Transaksi Penjualan Gabah & Beras</h3>
+              <div class="table-responsive">
+                <table class="modern-table">
+                  <thead>
+                    <tr>
+                      <th>ID Pesanan</th>
+                      <th>Nama Pembeli</th>
+                      <th>Tanggal Transaksi</th>
+                      <th>Total Pendapatan</th>
+                      <th>Status Pesanan</th>
+                      <th>Status Escrow</th>
+                    </tr>
+                  </thead>
+                  <tbody id="petani-transaksi-table-body">
+                    <!-- JS render -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 5: Riwayat Blockchain -->
+          <div id="petani-blockchain" class="tab-content">
+            <div class="content-card">
+              <h3>⛓️ Audit Ledger Kriptografi Blockchain (Petani View)</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Daftar rekaman blok aktivitas panen dan penjualan yang telah dienkripsi.</p>
+              <div class="table-responsive">
+                <table class="modern-table">
+                  <thead>
+                    <tr>
+                      <th>Blok #</th>
+                      <th>ID Transaksi</th>
+                      <th>Aktivitas Log</th>
+                      <th>Hash Kode</th>
+                      <th>Previous Hash</th>
+                      <th>Timestamp</th>
+                    </tr>
+                  </thead>
+                  <tbody id="petani-blockchain-table">
+                    <!-- JS render -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- 4. DASHBOARD PENGGILINGAN & DISTRIBUTOR SECTION -->
+  <!-- ---------------------------------------------------- -->
+  <section id="distributor-dashboard" class="page-section">
+    <div class="dashboard-wrapper">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <span style="font-size: 1.5rem;">🏭</span>
+          <span class="logo-text">RiceChain</span>
+        </div>
+        <div class="sidebar-user">
+          <div class="user-avatar" style="background-color: var(--tech-blue);">🏭</div>
+          <div class="user-info">
+            <span class="user-name profile-user-name">Distributor</span>
+            <span class="user-role profile-user-role">Distributor</span>
+          </div>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="menu-item active" data-tab="stok"><a href="#" onclick="showDashboardTab('distributor', 'stok')">📊 Dashboard Stok</a></li>
+          <li class="menu-item" data-tab="giling"><a href="#" onclick="showDashboardTab('distributor', 'giling')">⚙️ Penggilingan</a></li>
+          <li class="menu-item" data-tab="pesanan"><a href="#" onclick="showDashboardTab('distributor', 'pesanan')">📥 Pesanan Masuk</a></li>
+          <li class="menu-item" data-tab="pengiriman"><a href="#" onclick="showDashboardTab('distributor', 'pengiriman')">🚚 Pengiriman</a></li>
+          <li class="menu-item" data-tab="blockchain"><a href="#" onclick="showDashboardTab('distributor', 'blockchain')">⛓️ Blockchain Log</a></li>
+          <li class="menu-item logout-item"><a href="#" onclick="logoutUser()">🚪 Logout</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <button class="sidebar-toggle-btn" onclick="toggleMobileSidebar('distributor')">☰</button>
+          <div class="header-title">
+            <h2>Dashboard Penggilingan & Distributor</h2>
+          </div>
+          <div class="header-actions-bar">
+            <div class="wallet-badge">
+              <span>💳 Wallet:</span>
+              <strong class="wallet-balance-value">Rp 0</strong>
+            </div>
+            <div class="escrow-locked-badge">
+              <span>🔒 Escrow Lock:</span>
+              <strong class="escrow-locked-value">Rp 0</strong>
+            </div>
+          </div>
+        </header>
+
+        <div class="dashboard-content">
+          <!-- Area Banner Notifikasi Safety Stock -->
+          <div id="dist-low-stock-alert-container">
+            <!-- Alert dinonaktifkan/diisi dari JS jika stok aman -->
+          </div>
+
+          <!-- Sub-Tab 1: Dashboard Stok & Chart -->
+          <div id="distributor-stok" class="tab-content active">
+            <!-- Card Stats -->
+            <div class="stats-grid">
+              <div class="stat-card blue">
+                <div class="stat-info">
+                  <span class="stat-label">Total Stok Beras</span>
+                  <span class="stat-value" id="dist-stat-stok">0 Kg</span>
+                </div>
+                <div class="stat-icon">📦</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-info">
+                  <span class="stat-label">Pesanan Aktif</span>
+                  <span class="stat-value" id="dist-stat-pesanan">0</span>
+                </div>
+                <div class="stat-icon">📥</div>
+              </div>
+              <div class="stat-card blue">
+                <div class="stat-info">
+                  <span class="stat-label">Pengiriman Aktif</span>
+                  <span class="stat-value" id="dist-stat-pengiriman">0</span>
+                </div>
+                <div class="stat-icon">🚚</div>
+              </div>
+              <div class="stat-card red">
+                <div class="stat-info">
+                  <span class="stat-label">Low Stock Alert</span>
+                  <span class="stat-value" id="dist-stat-low-stock">0</span>
+                </div>
+                <div class="stat-icon">🚨</div>
+              </div>
+            </div>
+
+            <!-- Grid Layout untuk Grafik Stok & Tabel -->
+            <div class="dashboard-grid-2">
+              <!-- Grafik Stok Beras Modern -->
+              <div class="content-card">
+                <h3>📊 Grafik Persediaan Beras (Kg)</h3>
+                <div class="chart-container">
+                  <div class="bar-chart-wrapper" id="stok-bar-chart">
+                    <!-- Rendered by JS -->
+                  </div>
+                  <div class="chart-legend">
+                    <div class="legend-item">
+                      <span class="legend-color green"></span>
+                      <span>Stok Beras</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tabel Stok Detail -->
+              <div class="content-card">
+                <h3>📦 Daftar Stok Gudang Gudang Utama</h3>
+                <div class="table-responsive">
+                  <table class="modern-table">
+                    <thead>
+                      <tr>
+                        <th>ID Beras</th>
+                        <th>Jenis Beras</th>
+                        <th>Harga per Kg</th>
+                        <th>Stok Fisik</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody id="distributor-stok-table-body">
+                      <!-- Render JS -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 2: Penggilingan Gabah -->
+          <div id="distributor-giling" class="tab-content">
+            <div class="dashboard-grid-2">
+              <!-- Form Giling -->
+              <div class="content-card">
+                <h3>⚙️ Proses Giling Gabah</h3>
+                <form id="form-proses-giling" onsubmit="event.preventDefault(); tambahGiling();">
+                  <div class="form-group">
+                    <label for="giling-panen-id">Data Panen Gabah (Asal Petani)</label>
+                    <select id="giling-panen-id" class="form-control" required>
+                      <!-- Diisi dari database JS -->
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="giling-jumlah">Hasil Beras Giling Keluar (Kg)</label>
+                    <input type="number" id="giling-jumlah" class="form-control" placeholder="Contoh: 3500" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="giling-tanggal">Tanggal Proses Giling</label>
+                    <input type="date" id="giling-tanggal" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="giling-kualitas">Kualitas Hasil Giling</label>
+                    <select id="giling-kualitas" class="form-control">
+                      <option value="Premium">Premium Grade</option>
+                      <option value="Medium">Medium Grade</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-secondary" style="width: 100%; margin-top: 10px;">Mulai Giling & Tambah Stok Gudang</button>
+                </form>
+              </div>
+
+              <!-- Informasi Aturan Giling -->
+              <div class="content-card">
+                <h3>🌾 Hubungan Chain: Panen ke Giling</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+                  Proses penggilingan gabah ini merupakan jembatan traceability penting. Saat gabah digiling, ID Panen Petani tetap dikaitkan di ledger, sehingga konsumen akhir bisa mengetahui tanggal panen asal sawah.
+                </p>
+                <div style="background-color: var(--primary-green-light); border: 1.5px solid var(--primary-green); border-radius: var(--border-radius-sm); padding: 15px; margin: 15px 0; font-size: 0.85rem;">
+                  <strong style="color: var(--primary-green-hover);">💡 Aturan Validasi Kualitas:</strong><br>
+                  Beras giling yang diproduksi otomatis didaftarkan ke katalog dengan nama "Beras [Jenis Gabah]" dan langsung siap dibeli oleh Pembeli.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 3: Pesanan Masuk -->
+          <div id="distributor-pesanan" class="tab-content">
+            <div class="content-card">
+              <h3>📥 Kelola Pesanan Beras Masuk</h3>
+              <div class="table-responsive">
+                <table class="modern-table">
+                  <thead>
+                    <tr>
+                      <th>ID Pesanan</th>
+                      <th>Nama Pembeli</th>
+                      <th>Detail Pembelian</th>
+                      <th>Total Bayar</th>
+                      <th>Status Pesanan</th>
+                      <th>Status Escrow</th>
+                      <th>Aksi Kontrol</th>
+                    </tr>
+                  </thead>
+                  <tbody id="distributor-pesanan-table-body">
+                    <!-- JS render -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 4: Pengiriman -->
+          <div id="distributor-pengiriman" class="tab-content">
+            <div class="content-card">
+              <h3>🚚 Kontrol Logistik & Pengiriman Beras</h3>
+              <div class="table-responsive">
+                <table class="modern-table">
+                  <thead>
+                    <tr>
+                      <th>ID Kirim</th>
+                      <th>ID Pesanan</th>
+                      <th>Kurir Logistik</th>
+                      <th>Status Kirim</th>
+                      <th>Estimasi Tiba</th>
+                      <th>Bukti Terima</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="distributor-pengiriman-table-body">
+                    <!-- JS render -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 5: Blockchain Log -->
+          <div id="distributor-blockchain" class="tab-content">
+            <div class="content-card">
+              <h3>⛓️ Audit Ledger Kriptografi Blockchain (Distributor View)</h3>
+              <div class="table-responsive">
+                <table class="modern-table">
+                  <thead>
+                    <tr>
+                      <th>Blok #</th>
+                      <th>ID Transaksi</th>
+                      <th>Aktivitas Log</th>
+                      <th>Hash Kode</th>
+                      <th>Previous Hash</th>
+                      <th>Timestamp</th>
+                    </tr>
+                  </thead>
+                  <tbody id="distributor-blockchain-table">
+                    <!-- JS render -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- 5. DASHBOARD PEMBELI SECTION -->
+  <!-- ---------------------------------------------------- -->
+  <section id="pembeli-dashboard" class="page-section">
+    <div class="dashboard-wrapper">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <span style="font-size: 1.5rem;">🛒</span>
+          <span class="logo-text">RiceChain</span>
+        </div>
+        <div class="sidebar-user">
+          <div class="user-avatar" style="background-color: var(--light-gold); color: var(--dark-gray);">🛒</div>
+          <div class="user-info">
+            <span class="user-name profile-user-name">Nama Pembeli</span>
+            <span class="user-role profile-user-role">Pembeli</span>
+          </div>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="menu-item active" data-tab="katalog"><a href="#" onclick="showDashboardTab('pembeli', 'katalog')">🛍️ Katalog Beras</a></li>
+          <li class="menu-item" data-tab="keranjang"><a href="#" onclick="showDashboardTab('pembeli', 'keranjang')">🛒 Keranjang Belanja</a></li>
+          <li class="menu-item" data-tab="transaksi"><a href="#" onclick="showDashboardTab('pembeli', 'transaksi')">💳 Transaksi Escrow</a></li>
+          <li class="menu-item" data-tab="tracking"><a href="#" onclick="showDashboardTab('pembeli', 'tracking')">📍 Tracking Lacak</a></li>
+          <li class="menu-item" data-tab="traceability"><a href="#" onclick="showDashboardTab('pembeli', 'traceability')">🔍 Scan QR Traceability</a></li>
+          <li class="menu-item logout-item"><a href="#" onclick="logoutUser()">🚪 Logout</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <button class="sidebar-toggle-btn" onclick="toggleMobileSidebar('pembeli')">☰</button>
+          <div class="header-title">
+            <h2>Katalog Belanja & Tracking Pembeli</h2>
+          </div>
+          <div class="header-actions-bar">
+            <div class="wallet-badge">
+              <span>💳 Saldo Wallet:</span>
+              <strong class="wallet-balance-value">Rp 0</strong>
+            </div>
+          </div>
+        </header>
+
+        <div class="dashboard-content">
+          <!-- Sub-Tab 1: Katalog Beras -->
+          <div id="pembeli-katalog" class="tab-content active">
+            <!-- Filter Bar -->
+            <div class="filter-bar content-card" style="margin-bottom: 25px; padding: 15px;">
+              <div class="filter-item">
+                <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">Jenis Beras</label>
+                <select id="filter-jenis" class="form-control" onchange="renderKatalogBeras()" style="margin-top: 5px; padding: 8px;">
+                  <option value="">Semua Jenis</option>
+                  <option value="IR64">IR64</option>
+                  <option value="Pandan Wangi">Pandan Wangi</option>
+                </select>
+              </div>
+              <div class="filter-item">
+                <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">Kualitas</label>
+                <select id="filter-kualitas" class="form-control" onchange="renderKatalogBeras()" style="margin-top: 5px; padding: 8px;">
+                  <option value="">Semua Kualitas</option>
+                  <option value="Premium">Premium</option>
+                  <option value="Medium">Medium</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Catalog Grid -->
+            <div class="catalog-grid" id="buyer-catalog-grid">
+              <!-- Render JS -->
+            </div>
+          </div>
+
+          <!-- Sub-Tab 2: Keranjang Belanja -->
+          <div id="pembeli-keranjang" class="tab-content">
+            <div class="cart-wrapper">
+              <!-- Item List -->
+              <div class="content-card">
+                <h3>🛒 Keranjang Belanja</h3>
+                <div class="table-responsive">
+                  <table class="modern-table">
+                    <thead>
+                      <tr>
+                        <th>Jenis Beras</th>
+                        <th>Harga per Kg</th>
+                        <th>Jumlah Pesanan</th>
+                        <th>Subtotal</th>
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody id="cart-table-body">
+                      <!-- Render JS -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Ringkasan Checkout & Pembayaran Escrow -->
+              <div class="cart-summary">
+                <h3 style="border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-bottom: 15px;">Ringkasan Belanja</h3>
+                <div class="summary-row">
+                  <span>Total Kuantitas:</span>
+                  <strong id="cart-total-qty">0 Kg</strong>
+                </div>
+                <div class="summary-row">
+                  <span>Biaya Pengiriman:</span>
+                  <strong>GRATIS (Promo UTS)</strong>
+                </div>
+                <div class="summary-row total">
+                  <span>Total Bayar:</span>
+                  <strong id="cart-total-price">Rp 0</strong>
+                </div>
+
+                <div style="background-color: var(--gold-light); color: #856404; padding: 12px; border-radius: var(--border-radius-sm); font-size: 0.8rem; margin: 20px 0; border: 1px solid #ffeeba;">
+                  🔒 <strong>Escrow Smart Contract:</strong> Dana Anda ditahan sementara oleh sistem blockchain dan aman. Penjual tidak dapat mencairkan dana sampai Anda mengonfirmasi barang telah tiba.
+                </div>
+
+                <button class="btn btn-gold" style="width: 100%; font-size: 1rem; padding: 12px;" onclick="bayarEscrow()">Bayar via Escrow Ledger</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 3: Riwayat Transaksi Escrow -->
+          <div id="pembeli-transaksi" class="tab-content">
+            <div class="content-card">
+              <h3>💳 Pembayaran & Konfirmasi Escrow</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Lakukan konfirmasi terima barang di sini saat kiriman beras sudah tiba di lokasi Anda untuk melepaskan dana escrow.</p>
+              <div class="table-responsive">
+                <table class="modern-table">
+                  <thead>
+                    <tr>
+                      <th>ID Pesanan</th>
+                      <th>Tanggal Pesan</th>
+                      <th>Total Harga</th>
+                      <th>Status Pesanan</th>
+                      <th>Status Escrow</th>
+                      <th>Konfirmasi Penerimaan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="pembeli-transaksi-table-body">
+                    <!-- Render JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 4: Tracking Pesanan Aktif -->
+          <div id="pembeli-tracking" class="tab-content">
+            <div class="content-card">
+              <h3>📍 Pelacakan Digital Pengiriman Beras</h3>
+              <div style="margin-bottom: 20px;">
+                <label for="tracking-pesanan-select" style="font-weight: 700; font-size: 0.9rem;">Pilih Pesanan untuk Melacak:</label>
+                <select id="tracking-pesanan-select" class="form-control" onchange="handleTrackingSelectChange()" style="margin-top: 5px;">
+                  <!-- Dropdown rendered by JS -->
+                </select>
+              </div>
+
+              <!-- Timeline Area -->
+              <div id="tracking-timeline-area" style="margin-top: 30px;">
+                <!-- JS render timeline -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 5: Scan QR Traceability -->
+          <div id="pembeli-traceability" class="tab-content">
+            <div class="traceability-scan-area">
+              <!-- Simulasi scan QR -->
+              <div class="content-card qr-scanner-card">
+                <h3>📱 Simulasi Scan Kode QR Beras</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Pilih beras di bawah untuk menyimulasikan pemindaian kamera pada label kemasan RiceChain.</p>
+                
+                <div style="width: 100%; text-align: left; margin-top: 15px;">
+                  <label for="traceability-beras-select" style="font-weight: 600; font-size: 0.85rem;">Pilih Kemasan Beras:</label>
+                  <select id="traceability-beras-select" class="form-control" onchange="handleTraceabilitySelectChange()" style="margin-top: 5px;">
+                    <!-- JS render -->
+                  </select>
+                </div>
+
+                <div class="qr-placeholder-wrapper">
+                  <div class="qr-box">
+                    <div class="qr-corner qr-top-left"></div>
+                    <div class="qr-corner qr-top-right"></div>
+                    <div class="qr-corner qr-bottom-left"></div>
+                  </div>
+                  <div class="qr-scanner-line"></div>
+                </div>
+
+                <p style="font-size: 0.8rem; color: var(--primary-green-hover); font-weight: 700;">
+                  🟢 PEMINDAIAN BERHASIL & DATA TERVERIFIKASI BLOCKCHAIN
+                </p>
+              </div>
+
+              <!-- Hasil Lacak Traceability Detail -->
+              <div class="content-card" id="traceability-details-area">
+                <!-- JS render details asal-usul -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- 6. DASHBOARD ADMIN SECTION -->
+  <!-- ---------------------------------------------------- -->
+  <section id="admin-dashboard" class="page-section">
+    <div class="dashboard-wrapper">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <span style="font-size: 1.5rem;">🛡️</span>
+          <span class="logo-text">RiceChain Admin</span>
+        </div>
+        <div class="sidebar-user">
+          <div class="user-avatar" style="background-color: var(--dark-gray); border-color: var(--light-gold);">🛡️</div>
+          <div class="user-info">
+            <span class="user-name profile-user-name">Sistem Admin</span>
+            <span class="user-role profile-user-role">Admin</span>
+          </div>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="menu-item active" data-tab="control"><a href="#" onclick="showDashboardTab('admin', 'control')">⚙️ Control Center</a></li>
+          <li class="menu-item" data-tab="users"><a href="#" onclick="showDashboardTab('admin', 'users')">👥 Verifikasi Pengguna</a></li>
+          <li class="menu-item" data-tab="finansial"><a href="#" onclick="showDashboardTab('admin', 'finansial')">💰 Laporan Finansial</a></li>
+          <li class="menu-item" data-tab="blockchain"><a href="#" onclick="showDashboardTab('admin', 'blockchain')">⛓️ Audit Blockchain</a></li>
+          <li class="menu-item logout-item"><a href="#" onclick="logoutUser()">🚪 Logout</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <button class="sidebar-toggle-btn" onclick="toggleMobileSidebar('admin')">☰</button>
+          <div class="header-title">
+            <h2>Control Center & Audit Blockchain Admin</h2>
+          </div>
+          <div class="header-actions-bar">
+            <!-- Tampilan finansial wallet escrow platform -->
+            <div class="escrow-locked-badge">
+              <span>🔒 Total Dana Escrow Platform:</span>
+              <strong class="escrow-locked-value">Rp 0</strong>
+            </div>
+          </div>
+        </header>
+
+        <div class="dashboard-content">
+          <!-- Sub-Tab 1: Control Center / Stats -->
+          <div id="admin-control" class="tab-content active">
+            <!-- Stats -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-info">
+                  <span class="stat-label">Jumlah Pengguna</span>
+                  <span class="stat-value" id="admin-stat-users">0</span>
+                </div>
+                <div class="stat-icon">👥</div>
+              </div>
+              <div class="stat-card blue">
+                <div class="stat-info">
+                  <span class="stat-label">Mitra Petani</span>
+                  <span class="stat-value" id="admin-stat-petani">0</span>
+                </div>
+                <div class="stat-icon">🧑‍🌾</div>
+              </div>
+              <div class="stat-card blue">
+                <div class="stat-info">
+                  <span class="stat-label">Distributor / Gudang</span>
+                  <span class="stat-value" id="admin-stat-dist">0</span>
+                </div>
+                <div class="stat-icon">🏭</div>
+              </div>
+              <div class="stat-card blue">
+                <div class="stat-info">
+                  <span class="stat-label">Pembeli Terdaftar</span>
+                  <span class="stat-value" id="admin-stat-pembeli">0</span>
+                </div>
+                <div class="stat-icon">🛒</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-info">
+                  <span class="stat-label">Total Transaksi</span>
+                  <span class="stat-value" id="admin-stat-transaksi">0</span>
+                </div>
+                <div class="stat-icon">📈</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-info">
+                  <span class="stat-label">Total Pengiriman</span>
+                  <span class="stat-value" id="admin-stat-pengiriman">0</span>
+                </div>
+                <div class="stat-icon">🚚</div>
+              </div>
+            </div>
+
+            <!-- Overview Audit Blockchain Ringkas -->
+            <div class="content-card">
+              <h3>🔍 Ringkasan Audit Ledger Terkini</h3>
+              <div class="table-responsive">
+                <table class="modern-table">
+                  <thead>
+                    <tr>
+                      <th>Blok #</th>
+                      <th>ID Transaksi</th>
+                      <th>Aktivitas Log</th>
+                      <th>Hash Kode</th>
+                      <th>Previous Hash</th>
+                      <th>Timestamp</th>
+                    </tr>
+                  </thead>
+                  <tbody id="admin-blockchain-table">
+                    <!-- JS render -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 2: Verifikasi Pengguna -->
+          <div id="admin-users" class="tab-content">
+            <div class="content-card">
+              <h3>👥 Kelola Verifikasi Pengguna Rantai Pasok</h3>
+              <div class="table-responsive">
+                <table class="modern-table">
+                  <thead>
+                    <tr>
+                      <th>ID User</th>
+                      <th>Nama Pengguna</th>
+                      <th>Email Akun</th>
+                      <th>Peran / Role</th>
+                      <th>Status Verifikasi</th>
+                      <th>Tindakan Admin</th>
+                    </tr>
+                  </thead>
+                  <tbody id="admin-users-table-body">
+                    <!-- JS render -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 3: Laporan Finansial -->
+          <div id="admin-finansial" class="tab-content">
+            <div class="dashboard-grid-2">
+              <!-- Statistik financial -->
+              <div class="content-card">
+                <h3>💰 Laporan Keuangan Escrow RiceChain</h3>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 15px;">
+                  <div style="background-color: var(--gold-light); padding: 15px; border-radius: var(--border-radius-sm); border: 1px solid #FEEB8C;">
+                    <span style="font-size: 0.85rem; font-weight: 700; color: #856404; text-transform: uppercase;">Total Dana Escrow Smart Contract</span>
+                    <h2 id="admin-fin-escrow" style="color: #856404; font-size: 2rem; margin-top: 5px;">Rp 0</h2>
+                    <p style="font-size: 0.75rem; color: #856404; margin-top: 5px;">Dana aktif milik pembeli yang masih ditahan sebelum konfirmasi terima.</p>
+                  </div>
+                  
+                  <div style="background-color: var(--primary-green-light); padding: 15px; border-radius: var(--border-radius-sm); border: 1px solid var(--primary-green);">
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-green-hover); text-transform: uppercase;">Settlement Dana Cair</span>
+                    <h2 id="admin-fin-settlement" style="color: var(--primary-green-hover); font-size: 2rem; margin-top: 5px;">Rp 0</h2>
+                    <p style="font-size: 0.75rem; color: var(--primary-green-hover); margin-top: 5px;">Dana yang sudah dilepas ke produsen/distributor setelah verifikasi pengiriman sukses.</p>
+                  </div>
+
+                  <div style="background-color: var(--danger-light); padding: 15px; border-radius: var(--border-radius-sm); border: 1px solid var(--danger);">
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--danger); text-transform: uppercase;">Total Refund Dana</span>
+                    <h2 id="admin-fin-refund" style="color: var(--danger); font-size: 2rem; margin-top: 5px;">Rp 0</h2>
+                    <p style="font-size: 0.75rem; color: var(--danger); margin-top: 5px;">Dana pembeli yang dikembalikan akibat pembatalan pesanan.</p>
+                  </div>
+
+                  <div style="background-color: var(--tech-blue-light); padding: 15px; border-radius: var(--border-radius-sm); border: 1px solid var(--tech-blue);">
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--tech-blue-hover); text-transform: uppercase;">Komisi Platform (2%)</span>
+                    <h2 id="admin-fin-commission" style="color: var(--tech-blue-hover); font-size: 2rem; margin-top: 5px;">Rp 0</h2>
+                    <p style="font-size: 0.75rem; color: var(--tech-blue-hover); margin-top: 5px;">Pendapatan platform yang dipotong dari transaksi sukses.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chart Keuangan sederhana HTML/CSS -->
+              <div class="content-card">
+                <h3>📊 Grafik Perbandingan Finansial</h3>
+                <div class="chart-container">
+                  <div class="bar-chart-wrapper" id="finansial-bar-chart">
+                    <!-- Rendered by JS -->
+                  </div>
+                  <div class="chart-legend">
+                    <div class="legend-item">
+                      <span class="legend-color green" style="background: var(--primary-green);"></span>
+                      <span>Hijau (Cair/Refund)</span>
+                    </div>
+                    <div class="legend-item">
+                      <span class="legend-color blue" style="background: var(--tech-blue);"></span>
+                      <span>Biru (Escrow/Komisi)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab 4: Audit Blockchain Lengkap (redundant render, table audit) -->
+          <div id="admin-blockchain" class="tab-content">
+            <!-- Diatur dari sub-tab 1 yang sudah me-render table blockchain -->
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- Mengimpor script utama logika aplikasi -->
+  <script src="script.js"></script>
+</body>
+</html>
